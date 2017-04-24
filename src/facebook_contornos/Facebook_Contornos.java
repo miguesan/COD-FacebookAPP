@@ -13,13 +13,25 @@ public class Facebook_Contornos {
         
         int opciones;
         do{
-            opciones=Integer.parseInt(JOptionPane.showInputDialog("1- Ver TimeLine y buscar Trending \n2- Tweetear \n3- Enviar Mensaje Directo \n0- Salir"));
+            opciones=Integer.parseInt(JOptionPane.showInputDialog("1- Cambiar Estado \n2- 'Me Gusta' un Post \n3- Publicar Imagen \n4- Buscar en TimeLine \n5- Comentar Publicacion \n6- Publicar Comentario/Estado \n0- Salir"));
                 switch(opciones){
-                    case 1: 
+                    case 1:
+                        met.cambEstado();
                         break;
                     case 2:
+                        met.darGusta();
                         break;
                     case 3:
+                        met.pubImagen();
+                        break;
+                    case 4:
+                        met.lineaTiempo();
+                        break;
+                    case 5:
+                        met.comentariosPublicacion();
+                        break;
+                    case 6:
+                        met.comentar();
                         break;
                     case 0:
                         System.exit(0);
