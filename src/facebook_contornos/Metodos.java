@@ -35,10 +35,10 @@ public class Metodos {
     public Metodos() { //Constructor con las KEYs
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-        .setOAuthAppId("260029277794629")
-        .setOAuthAppSecret("3d03f2569b5b8b8d69a09a4a1b6716b4")
-        .setOAuthAccessToken("EAADsfsi78UUBAOYCcJXNgXI8nS902iwFjV1qhxVsC8ZAOUc77Kb4VpsPYylCOXVGc8P8zevYrulnoBLhsNbkcerDh8yV5vSMvRLcUbOn65jR10KNh3kf95cJ6NQed6oMQweVLZADUktgSrvVY6DSt801ZBJZAqUZD")
-        .setOAuthPermissions("email,publish_stream,publish_actions");
+        .setOAuthAppId("*")
+        .setOAuthAppSecret("*")
+        .setOAuthAccessToken("*")
+        .setOAuthPermissions("*");
     FacebookFactory ff = new FacebookFactory(cb.build());
     facebook = ff.getInstance();
     
