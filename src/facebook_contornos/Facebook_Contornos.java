@@ -23,7 +23,7 @@ public class Facebook_Contornos {
         
         int opciones;
         do{
-            opciones=Integer.parseInt(JOptionPane.showInputDialog("1- Cambiar Estado \n2- 'Me Gusta' un Post \n3- Publicar Imagen por URL \n4- Buscar en TimeLine/Post \n5- Hacer un Comentario \n6- Mostrar Biografia y Comentarios de Publicaciones \n7- Publicar Imagen \n0- Salir"));
+            opciones=Integer.parseInt(JOptionPane.showInputDialog("1- Cambiar Estado \n2- 'Me Gusta' un Post \n3- Publicar Imagen por URL \n4- Buscar en TimeLine/Post \n5- Hacer un Comentario \n6- Mostrar Biografia y Comentarios de Publicaciones \n7- Publicar Imagen \n8- Extender Token \n0- Salir"));
                 switch(opciones){
                     case 1: //Cambiar Estado 
                         met.cambEstado(JOptionPane.showInputDialog("Introduce el nuevo Estado: "));
@@ -45,6 +45,9 @@ public class Facebook_Contornos {
                         break;
                     case 7: //Publicar Imagen
                         met.subirImagen();
+                        break;
+                    case 8: //Extender Token
+                        met.extToken();
                         break;
                     case 0: //Salir del Programa
                         System.exit(0);

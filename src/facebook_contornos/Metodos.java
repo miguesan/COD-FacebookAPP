@@ -58,11 +58,11 @@ public class Metodos {
     }
     
     /**
-     * Salta el mensaje que "Dale al boton de Like en la Pagina de Facebook fisicamente" por no funcionar automaticamente
+     * Salta el mensaje que "Fuera de Servicio. Accede a Facebook dale fisicamente al boton de 'Me Gusta' desde la propia pagina" por no funcionar automaticamente
      */
     
     public void darGusta(){ //Darle me gusta a un post
-        JOptionPane.showMessageDialog(null,"Dale al boton de Like en la Pagina de Facebook fisicamente");
+        JOptionPane.showMessageDialog(null,"Fuera de Servicio. Accede a Facebook dale fisicamente al boton de 'Me Gusta' desde la propia pagina");
     }
     
     /**
@@ -126,6 +126,16 @@ public class Metodos {
     public void subirImagen(){ //subir imagen
         
         JOptionPane.showMessageDialog(null,"Fuera de Servicio. Facebook lo cerraria el servicio");
+    }
+    
+    /**
+     * Salta el mensaje que ""Fuera de Servicio. Accede a la pagina de 'Facebook Devoleper' para renovarlos" por no poder hacerlo desde el propio programa automaticamente
+     */
+    
+    public void extToken(){ //Extender Token
+        
+        JOptionPane.showMessageDialog(null,"Fuera de Servicio. Accede a la pagina de 'Facebook Devoleper' para renovarlos");
+    
     }
     
     
